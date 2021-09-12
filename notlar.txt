@@ -1,0 +1,12 @@
+dc squide çok girmene gerek yok introduction gibi yazmışsın !!!
+1 parağraf sadece konuyu anlat Bi-SQUID/DC SQUID !!!
+problemi söyle !!!!
+Bi-SQUID tasarımı için bir araç yok !!! >>> problembi-squid marginleri az literatürden bir eşy bularak buna bak
+üçüncü parağğrafta bizim ne yaptığımızı söyle static analysis aracıyla ne şekilde çözmeye çalıştığını anlat !!!
+DC squid reference atmana gerk yok
+bi-squid 1 reference at !!!
+pascal ve sassan hocanın yapmış olduğu bir bi-squid çalışmasına referans at !!!
+magnetic pattern çıkartıldı !!! fiziksel cevaplar çıktı, working conditionları yansıtabilirsin !!!
+giriş,
+problem,
+sonuç.
