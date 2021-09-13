@@ -12,4 +12,6 @@ problem,
 sonuç.
 
 Başlıkta static yazmamalı biz time domainde çözüyoruz yani dinamik, bunu hoca ile konuş !!!
-bir kısaltmamı bulsak araç için Bi-SQUID analysis tool (BAT), gibi. 
+bir kısaltma mı bulsak araç için Bi-SQUID analysis tool (BAT), gibi.
+
+dynamic olunca devrelerde kullanılabiliyor !!! Qubit readout !!!
