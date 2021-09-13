@@ -1,4 +1,4 @@
-dc squide çok girmene gerek yok introduction gibi yazmışsın !!!
+﻿dc squide çok girmene gerek yok introduction gibi yazmışsın !!!
 1 parağraf sadece konuyu anlat Bi-SQUID/DC SQUID !!!
 problemi söyle !!!!
 Bi-SQUID tasarımı için bir araç yok !!! >>> problembi-squid marginleri az literatürden bir eşy bularak buna bak
@@ -10,3 +10,6 @@ magnetic pattern çıkartıldı !!! fiziksel cevaplar çıktı, working conditio
 giriş,
 problem,
 sonuç.
+
+Başlıkta static yazmamalı biz time domainde çözüyoruz yani dinamik, bunu hoca ile konuş !!!
+bir kısaltmamı bulsak araç için Bi-SQUID analysis tool (BAT), gibi. 
