@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.integrate import odeint
 from PhiExt import *
 from Voltage import *
 from Period import *

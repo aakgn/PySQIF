@@ -1,6 +1,7 @@
 # @ali.akgun
-# @date: 01.11.2021
+# @date: 02.11.2021
 # @to do:
+# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
 # @bugs:
 # @parameters:
 # @brief:
@@ -37,19 +38,19 @@ class PySQUID:
                   magnetic_field_resolution, initial_conditions, ib, l, ic3,\
                   time_resolution):
         
-        t = Period(self.characteristic_voltage, self.time_resolution)
-        t = t.calculate(self.characteristic_voltage, self.time_resolution)
-        PhiExtArray = PhiExt(self.magnetic_field_range[0],\
-                             self.magnetic_field_range[1],\
-                             self.magnetic_field_resolution)
-        PhiExtArray = PhiExtArray.calculate(self.magnetic_field_range[0],\
-                             self.magnetic_field_range[1],\
-                             self.magnetic_field_resolution)
-        voltage = Voltage(self.initial_conditions, t, PhiExtArray,\
-                          self.ib, self.l, self.ic3, self.time_resolution)
-        voltage.plot(self.initial_conditions, t, PhiExtArray,\
-                          self.ib, self.l, self.ic3, self.time_resolution)
+        t = Period(characteristic_voltage, time_resolution)
+        t = t.calculate(characteristic_voltage, time_resolution)
+        PhiExtArray = PhiExt(magnetic_field_range[0],\
+                             magnetic_field_range[1],\
+                             magnetic_field_resolution)
+        PhiExtArray = PhiExtArray.calculate(magnetic_field_range[0],\
+                             magnetic_field_range[1],\
+                             magnetic_field_resolution)
+        voltage = Voltage(initial_conditions, t, PhiExtArray,\
+                          ib, l, ic3, time_resolution)
+        voltage.plot(initial_conditions, t, PhiExtArray,\
+                          ib, l, ic3, magnetic_field_resolution)
         
-        return voltage.calculate(self.initial_conditions, t,\
-                                 PhiExtArray, self.ib, self.l, self.ic3,\
-                                 self.time_resolution)
+        return voltage.calculate(initial_conditions, t,\
+                                 PhiExtArray, ib, l, ic3,\
+                                 magnetic_field_resolution)

@@ -13,25 +13,20 @@
 #  You should integrate SQUID classes into the PySQUID project. (problem is Bi-SQUID time
 #  based and SQUID is static, you can do SQUID as time based and you can use same classes
 #  for both SQUID and Bi-SQUID.)
+#  you should change data points as magnetic field sampling !!!
 # @bugs: There is no known bugs.
 ##############################################################################################
 
-from PhiExt import *
-from Voltage import *
-from Period import *
-characteristic_voltage = 1 # Characteristic voltage, mV
-initial = 0
-final = 2 * np.pi
-data_points = 200
-initial_conditions = [0, 0]
-ib = 2
-l = 1.4
-ic3 = 1
-TimeDataPoints = 100
+from PySQUID import *
 
-t = Period(characteristic_voltage, TimeDataPoints)
-t = t.calculate(characteristic_voltage, TimeDataPoints)
-PhiExtArray = PhiExt(initial, final, data_points)
-PhiExtArray = PhiExtArray.calculate(initial, final, data_points)
-voltage = Voltage(initial_conditions, t, PhiExtArray, ib, l, ic3, data_points)
-voltage.plot(initial_conditions, t, PhiExtArray, ib, l, ic3, data_points)
+characteristic_voltage = 1 # Characteristic voltage, mV
+magnetic_field_range = [0, 2 * np.pi]
+magnetic_field_resolution = 59
+initial_conditions = [0, 0]
+ib = 2 # Ib / Ic
+l = 1 # 2πIcL / Phi_0
+ic3 = 0.58 # Ic3 / Ic
+time_resolution = 300
+
+v = PySQUID(characteristic_voltage, magnetic_field_range, magnetic_field_resolution, initial_conditions, ib, l, ic3, time_resolution)
+v.calculate(characteristic_voltage, magnetic_field_range,magnetic_field_resolution, initial_conditions, ib, l, ic3, time_resolution)

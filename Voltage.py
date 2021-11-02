@@ -1,6 +1,7 @@
 # @ali.akgun
-# @date: 29.08.2021
+# @date: 02.11.2021
 # @to do:
+# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
 # @bugs:
 # @parameters:
 # @brief:
@@ -81,7 +82,7 @@ class Voltage:
        # neden teorik olarak y eksenine göre simetri olduğunu varsaydığımda 
        # deneysel sonuçları sağlıyor !?!
        plt.plot(PhiExtArray, self.calculate(initial_conditions, t,\
-                    PhiExtArray, ib, l, ic3, data_points), "r.")
+                    PhiExtArray, ib, l, ic3, data_points))
        plt.xlabel("PhiExternal")
        plt.ylabel("V(PhiExternal)")
        plt.title("Voltage-magnetic flux")
