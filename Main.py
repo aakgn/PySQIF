@@ -14,6 +14,9 @@
 #  based and SQUID is static, you can do SQUID as time based and you can use same classes
 #  for both SQUID and Bi-SQUID.)
 #  you should change data points as magnetic field sampling !!!
+# initial conditions kısmını user a sormasan olur ne anlasın user :D/ aynı şekilde time ve
+# magnetic field resolution !!!Bunlar optional inputlar olabilir default değerler girersin
+# kullanıcıdan optional alrısın !!!
 # @bugs: There is no known bugs.
 ##############################################################################################
 
@@ -21,7 +24,7 @@ from PySQUID import *
 
 characteristic_voltage = 1 # Characteristic voltage, mV
 magnetic_field_range = [0, 2 * np.pi]
-magnetic_field_resolution = 59
+magnetic_field_resolution = 40
 initial_conditions = [0, 0]
 ib = 2 # Ib / Ic
 l = 1 # 2πIcL / Phi_0

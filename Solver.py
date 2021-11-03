@@ -27,10 +27,10 @@ class Solver:
     # @bugs:
     # @parameters:
     #   initial_conditions = initial conditions for solving systems of d.e.
-    #   t = time interval of system.
+    #   t = time steps of system.(sampling)
     #   PhiExt = External magnetic field as phiext/phi0
-    #   ib = bias current
-    #   l = Inductance parameter(not exactly equal to inductance !!!)
+    #   ib = Normalized bias current Ib / Ic
+    #   l = Inductance parameter (2πIcL / Phi_0)
     #   ic3 = Ic3 / Ic, Normalized current through shunt junction.
     # @brief:
     # Returns systems of differential equations as

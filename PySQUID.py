@@ -40,11 +40,9 @@ class PySQUID:
         
         t = Period(characteristic_voltage, time_resolution)
         t = t.calculate(characteristic_voltage, time_resolution)
-        PhiExtArray = PhiExt(magnetic_field_range[0],\
-                             magnetic_field_range[1],\
+        PhiExtArray = PhiExt(magnetic_field_range,\
                              magnetic_field_resolution)
-        PhiExtArray = PhiExtArray.calculate(magnetic_field_range[0],\
-                             magnetic_field_range[1],\
+        PhiExtArray = PhiExtArray.calculate(magnetic_field_range,\
                              magnetic_field_resolution)
         voltage = Voltage(initial_conditions, t, PhiExtArray,\
                           ib, l, ic3, time_resolution)
