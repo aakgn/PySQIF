@@ -17,6 +17,7 @@
 # initial conditions kısmını user a sormasan olur ne anlasın user :D/ aynı şekilde time ve
 # magnetic field resolution !!!Bunlar optional inputlar olabilir default değerler girersin
 # kullanıcıdan optional alrısın !!!
+# diferansiyel denkelm sovlerında bulunan sabitleri dışarıda hesapla !!! (loop dşında)
 # @bugs: There is no known bugs.
 ##############################################################################################
 
