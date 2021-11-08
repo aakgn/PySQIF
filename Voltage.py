@@ -15,15 +15,19 @@ from statistics import mean
 
 class Voltage:
     
-    def __init__ (self, initial_conditions, t, PhiExtArray, ib, l, ic3,\
-                  data_points):
+    def __init__ (self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
+                  l23s, d, data_points):
         
-        self.initial_conditions = initial_conditions
+        self.psi_initial = psi_initial
         self.t = t
-        self.PhiExtArray = PhiExtArray
+        self.phi_ext_array = phi_ext_array
         self.ib = ib
-        self.l = l
         self.ic3 = ic3
+        self.beta = beta
+        self.l12s = l12s
+        self.l12d = l12d
+        self.l23s = l23s
+        self.d = d
         self.data_points = data_points
         
     # @ali.akgun
@@ -41,25 +45,33 @@ class Voltage:
     # @brief:
     # Returns normalized voltage mean(voltage) = (1/2) * mean(thetadot)
     
-    def calculate(self, initial_conditions, t, PhiExtArray, ib, l, ic3,\
-                  data_points):
+    def calculate(self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
+                  l23s, d, data_points):
  
-        system = Solver(initial_conditions, t, PhiExtArray, ib, l, ic3)
-        meanthetadot = []
-        meanpsidot = []
+        system = Solver(psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
+                      l23s, d)
+        meanvoltage = []
         for i in range(data_points):
     
-            PhiExt = PhiExtArray[i]
-            x = system.calculate(initial_conditions, t, PhiExt, ib, l, ic3)
-            theta = x[:,0]
-            psi = x[:,1]
-            thetadot = ib - (2 * np.sin(theta / 2) * np.cos(psi / 2))
-            psidot = (-2 * ((PhiExt + psi) / l) - 2 * ic3 * np.sin(psi) -\
-                      (2 * np.sin(psi / 2) * np.cos(theta / 2))) / 3
+            phi_ext = phi_ext_array[i]
+            x = system.calculate(psi_initial, t, phi_ext, ib, ic3, beta, l12s,\
+                                 l12d, l23s, d)
+            psi1 = x[:,0]
+            psi2 = x[:,1]
+            
+            dpsi1dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) - (1 / (d * l12s * beta))\
+                * (psi1 - psi2 - 2 * np.pi * phi_ext * beta) + (1 / d) *\
+                (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
+                (1 + (1 / d)) * np.sin(psi1) - (1 / 2) * (1 - (1 / d)) * np.sin(psi2)
+
+            dpsi2dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) + (1 / (d * l12s * beta))\
+                * (psi1 - psi2 - 2 * np.pi * phi_ext * beta) - (1 / d) *\
+                (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
+                (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
     
-            meanthetadot.append(mean(thetadot))
-            meanpsidot.append(mean(psidot))
-        return np.array(meanthetadot) / 2
+            meanvoltage.append(mean(dpsi1dt + dpsi2dt) / 2)
+        
+        return meanvoltage 
     
     # @ali.akgun
     # @date: 29.08.2021
@@ -77,12 +89,12 @@ class Voltage:
     # Plots meanthetadot(normalized voltage) vs 
     # normalized external magnetic field.
     
-    def plot(self, initial_conditions, t, PhiExtArray, ib, l, ic3,\
-             data_points):
+    def plot(self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
+                  l23s, d, data_points):
        # neden teorik olarak y eksenine göre simetri olduğunu varsaydığımda 
        # deneysel sonuçları sağlıyor !?!
-       plt.plot(PhiExtArray, self.calculate(initial_conditions, t,\
-                    PhiExtArray, ib, l, ic3, data_points))
+       plt.plot(phi_ext_array, self.calculate(psi_initial, t, phi_ext_array, ib, ic3, beta,\
+                              l12s, l12d, l23s, d, data_points))
        plt.xlabel("PhiExternal")
        plt.ylabel("V(PhiExternal)")
        plt.title("Voltage-magnetic flux")

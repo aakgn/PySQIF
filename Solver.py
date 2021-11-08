@@ -12,14 +12,19 @@ from scipy.integrate import odeint
 
 class Solver:
     
-    def __init__ (self, initial_conditions, t, PhiExt, ib, l, ic3):
+    def __init__ (self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d,\
+                  l23s, d):
         
-        self.initial_conditions = initial_conditions
+        self.psi_initial = psi_initial
         self.t = t
         self.PhiExt = PhiExt
         self.ib = ib
-        self.l = l
         self.ic3 = ic3
+        self.beta = beta
+        self.l12s = l12s
+        self.l12d = l12d
+        self.l23s = l23s
+        self.d = d
         
     # @ali.akgun
     # @date: 29.08.2021
@@ -36,19 +41,28 @@ class Solver:
     # Returns systems of differential equations as
     # dpsidt and dthetadt.
     
-    def odes(self, initial_conditions, t, PhiExt, ib, l, ic3):
+    def odes(self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
+        
         
         # constants
+
         # assign each ODE to a vector element
-        theta = initial_conditions[0]
-        psi = initial_conditions[1]
+        psi1 = psi_initial[0]
+        psi2 = psi_initial[1]
 
         # define each ODE
-        dthetadt = ib - (2 * np.sin(theta / 2) * np.cos(psi / 2))
-        dpsidt = (-2 * ((PhiExt + psi) / l) - 2 * ic3 * np.sin(psi)\
-                  -(2 * np.sin(psi / 2) * np.cos(theta / 2))) / 3
+        dpsi1dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) - (1 / (d * l12s * beta))\
+            * (psi1 - psi2 - 2 * np.pi * PhiExt * beta) + (1 / d) *\
+            (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
+            (1 + (1 / d)) * np.sin(psi1) - (1 / 2) * (1 - (1 / d)) * np.sin(psi2)
 
-        return [dthetadt, dpsidt]
+        dpsi2dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) + (1 / (d * l12s * beta))\
+            * (psi1 - psi2 - 2 * np.pi * PhiExt * beta) - (1 / d) *\
+            (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
+            (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
+
+        return [dpsi1dt, dpsi2dt]
+
 
     # @ali.akgun
     # @date: 29.08.2021
@@ -64,7 +78,7 @@ class Solver:
     # @brief:
     # Solves systems of differential equations for Bi-SQUID
     
-    def calculate (self, initial_conditions, t, PhiExt, ib, l, ic3):
+    def calculate (self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
         
-        return odeint(self.odes, initial_conditions, t,\
-                      args = (PhiExt, ib, l, ic3))
+        return odeint(self.odes, psi_initial, t,\
+                      args = (PhiExt, ib, ic3, beta, l12s, l12d, l23s, d))
