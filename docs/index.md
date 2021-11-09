@@ -1,3 +1,9 @@
+#About
+
+SQUID based circuits are commonly used as sensitive magnetometers nowadays.
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/aakgn/PySQUID/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
