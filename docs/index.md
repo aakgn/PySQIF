@@ -1,8 +1,9 @@
 # About
 
-SQUID based circuits are commonly used as sensitive magnetometers nowadays.
+SQUID based circuits are commonly used as sensitive magnetometers nowadays. 
 
 
+# References
 
 ## Welcome to GitHub Pages
 
