@@ -17,25 +17,26 @@
 # initial conditions kısmını user a sormasan olur ne anlasın user :D/ aynı şekilde time ve
 # magnetic field resolution !!!Bunlar optional inputlar olabilir default değerler girersin
 # kullanıcıdan optional alrısın !!!
+# netlsit şekiklde kullanıcıdan input alsın !!!
 # @bugs: There is no known bugs.
 ##############################################################################################
 
 from PySQUID import *
 
 characteristic_voltage = 1 # Characteristic voltage, mV
-magnetic_field_range = [0, 2 * np.pi]
-magnetic_field_resolution = 40
+magnetic_field_range = [0, 1]
+magnetic_field_resolution = 60
 psi_initial = [0, 0]
 ib = 2 # Ib / Ic
-ic3 = 0.58 # Ic3 / Ic
+ic3 = 0 # Ic3 / Ic
 time_resolution = 300
 beta = 1
 l1a = 0.27
 l1b = 0.27
-l2a = 0.24
-l2b = 0.24
-l3a = 0.3
-l3b = 0.3
+l2a = 0
+l2b = 0
+l3a = 0
+l3b = 0
 
 l12s = l1a + l1b + l2a + l2b
 l12d = l1b - l1a + l2b - l2a
@@ -45,6 +46,6 @@ d = 3 + ((2 * l23s) / l12s)
 v = PySQUID(characteristic_voltage, magnetic_field_range,\
               magnetic_field_resolution, psi_initial, ib, ic3,\
              beta, l12s, l12d, l23s, d, time_resolution)
-v.calculate(characteristic_voltage, magnetic_field_range,\
+v = v.calculate(characteristic_voltage, magnetic_field_range,\
               magnetic_field_resolution, psi_initial, ib, ic3,\
              beta, l12s, l12d, l23s, d, time_resolution)

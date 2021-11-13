@@ -41,7 +41,7 @@ class Solver:
     # Returns systems of differential equations as
     # dpsidt and dthetadt.
     
-    def odes(psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
+    def odes(self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
         
         
         # constants
