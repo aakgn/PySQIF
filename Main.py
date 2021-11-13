@@ -23,8 +23,8 @@
 from PySQUID import *
 
 characteristic_voltage = 1 # Characteristic voltage, mV
-magnetic_field_range = [0, 1]
-magnetic_field_resolution = 60
+magnetic_field_range = [0, 2 * np.pi]
+magnetic_field_resolution = 40
 psi_initial = [0, 0]
 ib = 2 # Ib / Ic
 ic3 = 0.58 # Ic3 / Ic
