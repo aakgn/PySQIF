@@ -48,9 +48,9 @@ class PySQUID:
                              magnetic_field_resolution)
         PhiExtArray = PhiExtArray.calculate(magnetic_field_range,\
                              magnetic_field_resolution)
-        voltage = Voltage(psi_initial, t, PhiExtArray, ib, ic3, beta, l12s, l12d,\
-                      l23s, d, magnetic_field_resolution)
-        voltage.plot(psi_initial, t, PhiExtArray, ib, ic3, beta, l12s, l12d,\
+        voltage = Voltage(psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d,\
+                      l23s, d, data_points)
+        voltage.plot(psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d,\
                       l23s, d, magnetic_field_resolution)
         
         return voltage.calculate(psi_initial, t, PhiExt, ib, ic3, beta,\
