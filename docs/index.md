@@ -1,7 +1,32 @@
-# About
+# About 
 
-SQUID based circuits are commonly used as sensitive magnetometers nowadays. 
+## How PySQUID works
 
+## Authors
+
+## Contact
+
+## Contributing
+
+## Funding
+
+# Citing this project
+
+# Installation
+
+## Windows
+
+## Mac
+
+## Linux
+
+# Tutorials
+
+## Requirements
+
+# Report a bug
+
+# Developer Guides
 
 # References
 
