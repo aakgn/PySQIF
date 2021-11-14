@@ -4,6 +4,8 @@
 
 ## Authors
 
+PySQUID is currently developed and maintained by [Ali AKGUN](linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](linkedin.com/in/razmkhahsasan).TOBB University of Economics and Technology. 
+
 ## Contact
 
 ## Contributing
@@ -23,6 +25,14 @@
 # Tutorials
 
 ## Requirements
+
+PySQUID depends on several open-source libraries. The following packages are currently required:
+
+- scipy
+- numpy
+- matplotlib
+- statistics
+- pandas
 
 # Report a bug
 
