@@ -1,10 +1,10 @@
 # @ali.akgun
-# @date: 29.08.2021
+# @date: 13.11.2021
 # @to do:
 # @bugs:
 # @parameters:
 # @brief:
-# Solves Bi-SQUID systems of equations.
+# Solves Bi-SQUID systems of differential equations.
 
 import numpy as np
 from scipy.integrate import odeint
@@ -27,7 +27,7 @@ class Solver:
         self.d = d
         
     # @ali.akgun
-    # @date: 29.08.2021
+    # @date: 13.11.2021
     # @to do:
     # @bugs:
     # @parameters:
@@ -65,7 +65,7 @@ class Solver:
 
 
     # @ali.akgun
-    # @date: 29.08.2021
+    # @date: 13.11.2021
     # @to do:
     # @bugs:
     # @parameters:

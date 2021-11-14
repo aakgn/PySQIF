@@ -18,6 +18,7 @@
 # magnetic field resolution !!!Bunlar optional inputlar olabilir default değerler girersin
 # kullanıcıdan optional alrısın !!!
 # netlsit şekiklde kullanıcıdan input alsın !!!
+# netlistte default olsun diferansiyel denklemelrle ilgili olan teknik verielr.
 # @bugs: There is no known bugs.
 ##############################################################################################
 
@@ -38,14 +39,9 @@ l2b = 0
 l3a = 0
 l3b = 0
 
-l12s = l1a + l1b + l2a + l2b
-l12d = l1b - l1a + l2b - l2a
-l23s = l2a + l2b + l3a + l3b
-d = 3 + ((2 * l23s) / l12s) 
-
 v = PySQUID(characteristic_voltage, magnetic_field_range,\
               magnetic_field_resolution, psi_initial, ib, ic3,\
-             beta, l12s, l12d, l23s, d, time_resolution)
+             beta, l1a, l1b, l2a, l2b, l3a, l3b, time_resolution)
 v = v.calculate(characteristic_voltage, magnetic_field_range,\
               magnetic_field_resolution, psi_initial, ib, ic3,\
-             beta, l12s, l12d, l23s, d, time_resolution)
+             beta, l1a, l1b, l2a, l2b, l3a, l3b, time_resolution)
