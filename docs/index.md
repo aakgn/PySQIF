@@ -1,22 +1,22 @@
-# About 
+## About 
 
-## How PySQUID works
+### How PySQUID works
 
-## Authors
+### Authors
 
 PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan).TOBB University of Economics and Technology. 
 
-## Contact
+### Contact
 
 Don’t hesitate to contact:
 - Ali at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com)
 - Sasan at [sasan.razmkhah@gmail.com](sasan.razmkhah@gmail.com)
 
-## Contributing
+### Contributing
 
-## Funding
+### Citing this project
 
-# Citing this project
+### Funding
 
 # Installation
 
