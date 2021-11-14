@@ -24,24 +24,6 @@
 
 from PySQUID import *
 
-characteristic_voltage = 1 # Characteristic voltage, mV
-magnetic_field_range = [0, 1]
-magnetic_field_resolution = 60
-psi_initial = [0, 0]
-ib = 2 # Ib / Ic
-ic3 = 0 # Ic3 / Ic
-time_resolution = 300
-beta = 1
-l1a = 0.27
-l1b = 0.27
-l2a = 0
-l2b = 0
-l3a = 0
-l3b = 0
 
-v = PySQUID(characteristic_voltage, magnetic_field_range,\
-              magnetic_field_resolution, psi_initial, ib, ic3,\
-             beta, l1a, l1b, l2a, l2b, l3a, l3b, time_resolution)
-v = v.calculate(characteristic_voltage, magnetic_field_range,\
-              magnetic_field_resolution, psi_initial, ib, ic3,\
-             beta, l1a, l1b, l2a, l2b, l3a, l3b, time_resolution)
+v = PySQUID("input.csv")
+v = v.calculate("input.csv")

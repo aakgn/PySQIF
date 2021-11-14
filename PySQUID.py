@@ -11,27 +11,14 @@ from PhiExt import *
 from Voltage import *
 from TimeStep import *
 from InductanceConstants import *
+from InputData import *
 
 class PySQUID:
     
-    def __init__ (self, characteristic_voltage, magnetic_field_range,\
-                  magnetic_field_resolution, psi_initial, ib, ic3,\
-                 beta, l1a, l1b, l2a, l2b, l3a, l3b, time_resolution):
+    def __init__ (self, input_file):
      
-        self.characteristic_voltage = characteristic_voltage
-        self.magnetic_field_range = magnetic_field_range
-        self.magnetic_field_resolution = magnetic_field_resolution
-        self.psi_initial = psi_initial
-        self.ib = ib
-        self.ic3 = ic3
-        self.beta = beta
-        self.l1a = l1a
-        self.l1b = l1b
-        self.l2a = l2a
-        self.l2b = l2b
-        self.l3a = l3a
-        self.l3b = l3b
-        self.time_resolution = time_resolution
+        self.input_file = input_file
+
         
     # @ali.akgun
     # @date: 13.11.2021
@@ -41,9 +28,25 @@ class PySQUID:
     # @brief:
     
         
-    def calculate(self, characteristic_voltage, magnetic_field_range,\
-                  magnetic_field_resolution, psi_initial, ib, ic3, beta,\
-                      l1a, l1b, l2a, l2b, l3a, l3b, time_resolution):
+    def calculate(self, input_file):
+        
+        
+        input_data = InputData(input_file)
+        input_data = input_data.initialize(input_file)
+        psi_initial = input_data[0]
+        magnetic_field_range = input_data[1]
+        magnetic_field_resolution = int(input_data[2])
+        characteristic_voltage = input_data[3] 
+        ib = input_data[4]
+        ic3 = input_data[5]
+        time_resolution = int(input_data[6])
+        beta = input_data[7]
+        l1a = input_data[8]
+        l1b = input_data[9]
+        l2a = input_data[10]
+        l2b = input_data[11]
+        l3a = input_data[12]
+        l3b = input_data[13]   
         
         t = TimeStep(characteristic_voltage, time_resolution)
         t = t.calculate(characteristic_voltage, time_resolution)
