@@ -5,3 +5,5 @@ plugins:
 
 title: [PySQUID]
 description: [PySQUID]
+
+theme: jekyll-theme-slate
