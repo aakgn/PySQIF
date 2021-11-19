@@ -33,7 +33,7 @@ This section provides instructive tutorial to PySQUID newbies.
 ## Input Text File
 PySQUID has an input csv file for input protocol with user, this file is named as input.csv in PySQUID folder. Figure XX shows input parameters of this simulation in input csv file, which can be edited by user.
 
-![Image](<a href="https://imgbb.com/"><img src="https://i.ibb.co/zG07rrr/input-text-file.jpg" alt="input-text-file" border="0" /></a>)
+(<a href="https://imgbb.com/"><img src="https://i.ibb.co/zG07rrr/input-text-file.jpg" alt="input-text-file" border="0" /></a>)
 
 
 ## Requirements
