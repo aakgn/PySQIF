@@ -4,7 +4,7 @@
 
 ## Authors
 
-PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan).TOBB University of Economics and Technology. 
+PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), TOBB University of Economics and Technology Electrical and Electronics Engineering. 
 
 ## Contact
 
@@ -31,10 +31,14 @@ In this installation guide, we used Anaconda environment, you can track all step
 # Tutorials
 This section provides instructive tutorial to PySQUID newbies.
 ## Input Text File
-PySQUID has an input csv file for input protocol with user, this file is named as input.csv in PySQUID folder. Figure XX shows input parameters of this simulation in input csv file, which can be edited by user.
+ PySQUID has an input csv file for input protocol with user, this file is named as input.csv in PySQUID folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/zG07rrr/input-text-file.jpg" alt="input-text-file" border="0" /></a>
 
+"input.csv" file has two columns, "circuit_parameters" columns represents Bi-SQUID circuit elements, and "values" columns represents mathematical value of these circuit elements. Figure shows below Bi-SQUID circuit representation:
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/tBkg38y/bisquid.png" alt="bisquid" border="0"></a>
+###
 
 ## Requirements
 
