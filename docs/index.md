@@ -4,7 +4,7 @@
 
 ## Authors
 
-PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), TOBB University of Economics and Technology Electrical and Electronics Engineering. 
+PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
 
 ## Contact
 
