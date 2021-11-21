@@ -1,6 +1,6 @@
-circuit_parameters,values
-psi_initial_condition,0
-psi_final_condition,0
+simulation_parameters,values
+psi1_initial_condition,0
+psi2_initial_condition,0
 magnetic_field_range_initial,0
 magnetic_field_range_final,1
 magnetic_field_resolution,60
@@ -15,3 +15,7 @@ l2a,0.24
 l2b,0.24
 l3a,0.3
 l3b,0.3
+multiple_run, 0
+standard_deviation, 2
+mean, 0
+number_of_runs, 100

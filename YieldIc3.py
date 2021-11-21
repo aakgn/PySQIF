@@ -40,11 +40,3 @@ class YieldIc3:
                               self.t, self.PhiExtArray, self.ib, self.l, \
                               ic3_distribution[i], self.magnetic_field_sample)
             return voltage_margin
-            
-
-
-    
-    
-    
-    
-            

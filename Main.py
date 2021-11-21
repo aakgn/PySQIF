@@ -17,13 +17,12 @@
 # initial conditions kısmını user a sormasan olur ne anlasın user :D/ aynı şekilde time ve
 # magnetic field resolution !!!Bunlar optional inputlar olabilir default değerler girersin
 # kullanıcıdan optional alrısın !!!
-# netlsit şekiklde kullanıcıdan input alsın !!!
-# netlistte default olsun diferansiyel denklemelrle ilgili olan teknik verielr.
+# her method input file input olarak alsa, bu input file dan seçse inputları ?!
 # @bugs: There is no known bugs.
 ##############################################################################################
 
 from PySQUID import *
 
-
 v = PySQUID("input.csv")
 v = v.calculate("input.csv")
+

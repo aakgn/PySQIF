@@ -1,7 +1,8 @@
 # @ali.akgun
 # @date: 13.11.2021
 # @to do:
-# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
+# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!
+# Inputları almak için daha uygun bir yapı oluştur !!!    
 # @bugs:
 # More comments !!!    
 # @parameters:
@@ -48,21 +49,20 @@ class PySQUID:
         l3a = input_data[12]
         l3b = input_data[13]   
         
+        
+        inductance_constants = InductanceConstants(l1a, l1b, l2a, l2b, l3a, l3b)
+        l12s = inductance_constants.calculate_l12s(l1a, l1b, l2a, l2b, l3a, l3b)
+        l12d = inductance_constants.calculate_l12d(l1a, l1b, l2a, l2b, l3a, l3b)
+        l23s = inductance_constants.calculate_l23s(l1a, l1b, l2a, l2b, l3a, l3b)
+        d = inductance_constants.calculate_d(l1a, l1b, l2a, l2b, l3a, l3b)
         t = TimeStep(characteristic_voltage, time_resolution)
         t = t.calculate(characteristic_voltage, time_resolution)
         PhiExtArray = PhiExt(magnetic_field_range,\
                              magnetic_field_resolution)
         PhiExtArray = PhiExtArray.calculate(magnetic_field_range,\
                              magnetic_field_resolution)
-        inductance_constants = InductanceConstants(l1a, l1b, l2a, l2b, l3a, l3b)
-        l12s = inductance_constants.calculate_l12s(l1a, l1b, l2a, l2b, l3a, l3b)
-        l12d = inductance_constants.calculate_l12d(l1a, l1b, l2a, l2b, l3a, l3b)
-        l23s = inductance_constants.calculate_l23s(l1a, l1b, l2a, l2b, l3a, l3b)
-        d = inductance_constants.calculate_d(l1a, l1b, l2a, l2b, l3a, l3b)
         voltage = Voltage(psi_initial, t, PhiExtArray, ib, ic3, beta, l12s, l12d,\
                       l23s, d, magnetic_field_resolution)
-        voltage.plot(psi_initial, t, PhiExtArray, ib, ic3, beta, l12s, l12d,\
-                      l23s, d, magnetic_field_resolution)
-        
+            
         return voltage.calculate(psi_initial, t, PhiExtArray, ib, ic3, beta,\
                                  l12s, l12d, l23s, d, magnetic_field_resolution)

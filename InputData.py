@@ -1,11 +1,11 @@
 # @ali.akgun
-# @date: 13.11.2021
+# @date: 21.11.2021
 # @to do:
 # Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
-# @bugs:
-# More comments !!!    
+# @bugs:    
 # @parameters:
-# @brief: Main class
+#    @input_file: input csv file.
+# @brief: Reads input csv file and return input values as parameters.
 
 import pandas as pd
 
@@ -15,12 +15,15 @@ class InputData:
      
         self.input_file = input_file
         
+        
     # @ali.akgun
-    # @date: 13.11.2021
-    # @to do:
-    # @bugs:
+    # @date: 21.11.2021
+    # @to do:  
+    # @bugs:    
     # @parameters:
-    # @brief:
+    #    @input_file: input csv file.
+    # @brief: Reads input csv file and return input values as parameters.
+
     
         
     def initialize(self, input_file):

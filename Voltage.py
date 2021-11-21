@@ -10,7 +10,6 @@
 import numpy as np
 from scipy.integrate import odeint
 from Solver import *
-import matplotlib.pyplot as plt
 from statistics import mean
 
 class Voltage:
