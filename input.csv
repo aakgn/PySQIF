@@ -15,7 +15,7 @@ l2a,0.24
 l2b,0.24
 l3a,0.3
 l3b,0.3
-multiple_run, 0
-standard_deviation, 2
-mean, 0
-number_of_runs, 100
+multiple_run,0
+standard_deviation,2
+mean,1
+number_of_runs,60

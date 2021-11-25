@@ -1,7 +1,6 @@
 # @ali.akgun
-# @date: 21.11.2021
-# @to do:
-# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
+# @date: 25.11.2021
+# @to do:   
 # @bugs:    
 # @parameters:
 #    @input_file: input csv file.
@@ -10,6 +9,14 @@
 import pandas as pd
 
 class InputData:
+ 
+    # @ali.akgun
+    # @date: 25.11.2021
+    # @to do:  
+    # @bugs:    
+    # @parameters:
+    #    @input_file: input csv file.
+    # @brief: Constructor method.
     
     def __init__ (self, input_file):
      
@@ -17,7 +24,7 @@ class InputData:
         
         
     # @ali.akgun
-    # @date: 21.11.2021
+    # @date: 25.11.2021
     # @to do:  
     # @bugs:    
     # @parameters:
@@ -42,8 +49,13 @@ class InputData:
         l2a = input_data.values[12, 1]
         l2b = input_data.values[13, 1]
         l3a = input_data.values[14, 1]
-        l3b = input_data.values[15, 1]        
+        l3b = input_data.values[15, 1]
+        multiple_run = input_data.values[16, 1]         
+        standard_deviation = input_data.values[17, 1] 
+        mean = input_data.values[18, 1]
+        number_of_runs = input_data.values[19, 1] 
         
         return [psi_initial, magnetic_field_range, magnetic_field_resolution,\
                 characteristic_voltage, ib, ic3, time_resolution, beta, l1a,
-                l1b, l2a, l2b, l3a, l3b]
+                l1b, l2a, l2b, l3a, l3b, multiple_run, standard_deviation,\
+                    mean, number_of_runs]

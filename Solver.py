@@ -1,6 +1,10 @@
 # @ali.akgun
-# @date: 13.11.2021
+# @date: 24.11.2021
 # @to do:
+# for loop içindeki sabit hesaplamaları for loop dşında yap performans arttırmak
+# için
+# calculate methodunu böl örnek bir method psi1 hesaplasın 
+# diğer method psi 2 sonra toplasın falan
 # @bugs:
 # @parameters:
 # @brief:
@@ -11,6 +15,25 @@ from scipy.integrate import odeint
 
 
 class Solver:
+    
+    # @ali.akgun
+    # @date: 24.11.2021
+    # @to do:  
+    # @bugs:
+    # @parameters:
+    #   @psi_cinitial = initial conditions for solving systems of d.e. 
+    #   (psi1 and psi2)
+    #   @t = time step array for solving systems of differential equations.
+    #   @phi_ext_array = Normalized External applied magnetic field array as 
+    #   phiext/phi0
+    #   @ib = Normalized bias current (Ib / Ic)
+    #   ic3 = Ic3 / Ic, Normalized current through shunt junction.
+    #   @l12s = l1a + l1b + l2a + l2b
+    #   @l12d = l1b – l1a + l2b – l2a
+    #   @l23s = l2a + l2b + l3a + l3b
+    #   @d =    3 + 2l23s / l12s
+    # @brief:
+    # constructor method
     
     def __init__ (self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d,\
                   l23s, d):
@@ -25,21 +48,25 @@ class Solver:
         self.l12d = l12d
         self.l23s = l23s
         self.d = d
-        
+   
     # @ali.akgun
-    # @date: 13.11.2021
-    # @to do:
+    # @date: 24.11.2021
+    # @to do:  
     # @bugs:
     # @parameters:
-    #   initial_conditions = initial conditions for solving systems of d.e.
-    #   t = time steps of system.(sampling)
-    #   PhiExt = External magnetic field as phiext/phi0
-    #   ib = Normalized bias current Ib / Ic
-    #   l = Inductance parameter (2πIcL / Phi_0)
+    #   @psi_cinitial = initial conditions for solving systems of d.e. 
+    #   (psi1 and psi2)
+    #   @t = time step array for solving systems of differential equations.
+    #   @phi_ext_array = Normalized External applied magnetic field array as 
+    #   phiext/phi0
+    #   @ib = Normalized bias current (Ib / Ic)
     #   ic3 = Ic3 / Ic, Normalized current through shunt junction.
+    #   @l12s = l1a + l1b + l2a + l2b
+    #   @l12d = l1b – l1a + l2b – l2a
+    #   @l23s = l2a + l2b + l3a + l3b
+    #   @d =    3 + 2l23s / l12s
     # @brief:
-    # Returns systems of differential equations as
-    # dpsidt and dthetadt.
+    # Returns systems of differential equations as dpsi1dt and dpsi2dt.
     
     def odes(self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
         
@@ -63,18 +90,22 @@ class Solver:
 
         return [dpsi1dt, dpsi2dt]
 
-
     # @ali.akgun
-    # @date: 13.11.2021
-    # @to do:
+    # @date: 24.11.2021
+    # @to do:  
     # @bugs:
     # @parameters:
-    #   initial_conditions = initial conditions for solving systems of d.e.
-    #   t = time interval of system.
-    #   PhiExt = External magnetic field as phiext/phi0
-    #   ib = bias current
-    #   l = Inductance parameter(not exactly equal to inductance !!!)
+    #   @psi_cinitial = initial conditions for solving systems of d.e. 
+    #   (psi1 and psi2)
+    #   @t = time step array for solving systems of differential equations.
+    #   @phi_ext_array = Normalized External applied magnetic field array as 
+    #   phiext/phi0
+    #   @ib = Normalized bias current (Ib / Ic)
     #   ic3 = Ic3 / Ic, Normalized current through shunt junction.
+    #   @l12s = l1a + l1b + l2a + l2b
+    #   @l12d = l1b – l1a + l2b – l2a
+    #   @l23s = l2a + l2b + l3a + l3b
+    #   @d =    3 + 2l23s / l12s
     # @brief:
     # Solves systems of differential equations for Bi-SQUID
     

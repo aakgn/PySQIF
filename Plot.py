@@ -1,11 +1,12 @@
 # @ali.akgun
-# @date: 02.11.2021
+# @date: 24.11.2021
 # @to do:
-# Boşuna hem plot hem calculation oluşturuyorsun onu düzenle boşuna complexity !!!    
+# surface plot !!!  
 # @bugs:
 # @parameters:
 # @brief:
-# Calculates normalized voltage.
+# Plots normalized voltage response of Bi-SQUID against external applied
+# magnetic field.
 
 from PhiExt import *
 from InputData import *
@@ -13,29 +14,35 @@ import matplotlib.pyplot as plt
 
 class Plot:
     
-    def __init__ (self, input_file, voltage):
+    # @ali.akgun
+    # @date: 24.11.2021
+    # @to do:  
+    # @bugs:
+    # @parameters:
+    #   @voltage = normalized voltage response of Bi-SQUID against 
+    #   external applied magnetic field.
+    #   @input_file = Simulation input csv file.
+    # @brief:
+    # constructor method
+    
+    def __init__ (self, voltage, input_file):
         
         self.input_file = input_file
         self.voltage = voltage
-
-        
+ 
     # @ali.akgun
-    # @date: 29.08.2021
-    # @to do:
+    # @date: 24.11.2021
+    # @to do:  
     # @bugs:
     # @parameters:
-    #   initial_conditions = initial conditions for solving systems of d.e.
-    #   t = time interval of system.
-    #   PhiExtArray = External magnetic field array as phiext/phi0
-    #   ib = bias current
-    #   l = Inductance parameter(not exactly equal to inductance !!!)
-    #   ic3 = Ic3 / Ic, Normalized current through shunt junction.
-    #   data_points = Total data points of normalized voltage array
+    #   @voltage = normalized voltage response of Bi-SQUID against 
+    #   external applied magnetic field.
+    #   @input_file = Simulation input csv file.
     # @brief:
-    # Plots meanthetadot(normalized voltage) vs 
-    # normalized external magnetic field.
+    # Plots normalized voltage response of Bi-SQUID against external applied
+    # magnetic field.
     
-    def plot(self, input_file, voltage):
+    def plot(self, voltage, input_file):
         
        input_data = InputData(input_file)
        input_data = input_data.initialize(input_file)
