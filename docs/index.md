@@ -19,6 +19,14 @@ Your contribution is more than welcome! You can submit pull requests on our Gith
 
 ## Citing this project
 
+If you find PySQUID useful, please consider citing this project as:
+
+
+This will also help us secure future funding supporting the development of this software.
+
+
+If you do use PySQUID in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how PySQUID is being used as a research tool.
+
 ## Funding
 
 # Installation
