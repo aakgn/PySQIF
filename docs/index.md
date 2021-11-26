@@ -1,12 +1,12 @@
 # About 
 
-PySQUID is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. PySQUID library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, PySQUID provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the said parameter. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
+PySQUID is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. SQUIDpy library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, SQUIDpy provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the said parameter. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
 
-## How PySQUID works
+## How SQUIDpy works
 
 ## Authors
 
-PySQUID is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
+SQUIDpy is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
 
 ## Contact
 
@@ -19,13 +19,13 @@ Your contribution is more than welcome! You can submit pull requests on our Gith
 
 ## Citing this project
 
-If you find PySQUID useful, please consider citing this project as:
+If you find SQUIDpy useful, please consider citing this project as:
 
 
 This will also help us secure future funding supporting the development of this software.
 
 
-If you do use PySQUID in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how PySQUID is being used as a research tool.
+If you do use SQUIDpy in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how SQUIDpy is being used as a research tool.
 
 ## Funding
 
@@ -39,9 +39,9 @@ In this installation guide, we used Anaconda environment, you can track all step
 ## Linux
 
 # Tutorials
-This section provides instructive tutorial to PySQUID newbies.
+This section provides instructive tutorial to SQUIDpy newbies.
 ## Input Text File
- PySQUID has an input csv file for input protocol with user, this file is named as input.csv in PySQUID folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
+ SQUIDpy has an input csv file for input protocol with user, this file is named as input.csv in SQUIDpy folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/zG07rrr/input-text-file.jpg" alt="input-text-file" border="0" /></a>
 
@@ -55,7 +55,7 @@ This section provides instructive tutorial to PySQUID newbies.
 
 ## Requirements
 
-PySQUID depends on several open-source libraries. The following packages are currently required:
+SQUIDpy depends on several open-source libraries. The following packages are currently required:
 
 - scipy
 - numpy
@@ -66,7 +66,7 @@ PySQUID depends on several open-source libraries. The following packages are cur
 
 # Report a bug
 
-If you are using the pysquid library and think you have found a bug, or if you have questions about installing or using pysquid, please don’t hesitate to contact with us:
+If you are using the SQUIDpy library and think you have found a bug, or if you have questions about installing or using SQUIDpy, please don’t hesitate to contact with us:
 
 - Ali at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com)
 - Sasan at [sasan.razmkhah@gmail.com](sasan.razmkhah@gmail.com)
