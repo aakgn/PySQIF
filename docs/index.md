@@ -4,6 +4,8 @@ SQUIDpy is an open-source and user-friendly statistical analysis library for  SQ
 
 ## How SQUIDpy works
 
+For an overview of the SQUIDpy methodology and the algorithmic methods which implement it, go to our technical paper[link](link).
+
 ## Authors
 
 SQUIDpy is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
