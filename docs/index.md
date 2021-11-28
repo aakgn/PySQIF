@@ -62,7 +62,10 @@ This section provides instructive tutorial to SQUIDpy newbies.
 - l1a, and l1b represents inductances at top of circuit.
 - l2a, and l2b represents inductances at parallel third Josephson Junction.
 - l3a, and l3b repesents inductances at bottom of circuit.
-- multiple_run defines 
+- multiple_run defines multiple run selection of this simulation. 0 means that single run, 1 means that multiple run. In the multiple run selection PySQUID creates ic3 gaussian distribution according to mean and standard deviation inputs.
+- standard_devaiation determines standard deviation of ic3 distribution in multiple run case.
+- mean represents mean of the ic3 gaussian distribution in multiple run case.
+- number_of_runs defines length of the ic3 gaussian distribution.
 
 ## Running a Single Run Simulation 
 PySQUID has a main class named PySQUID, firstliy users should import this class.
@@ -72,7 +75,9 @@ PySQUID class has a method to run this simulation named calculate. Secondly user
 When simulation time is done, calculate method returns voltage response of PySQUID agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
 
 
-## Requirements
+## Running Multiple Single Run Simulation 
+
+# Requirements
 
 SQUIDpy depends on several open-source libraries. The following packages are currently required:
 
