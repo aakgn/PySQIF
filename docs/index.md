@@ -75,7 +75,7 @@ PySQUID class has a method to run this simulation named calculate. Secondly user
 When simulation time is done, calculate method returns voltage response of PySQUID agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
 
 
-## Running Multiple Single Run Simulation 
+## Running a Multiple Run Simulation 
 
 # Requirements
 
