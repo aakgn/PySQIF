@@ -42,18 +42,35 @@ In this installation guide, we used Anaconda environment, you can track all step
 
 # Tutorials
 This section provides instructive tutorial to SQUIDpy newbies.
-## Input Text File
+## Input Text File Format
  SQUIDpy has an input csv file for input protocol with user, this file is named as input.csv in SQUIDpy folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/zG07rrr/input-text-file.jpg" alt="input-text-file" border="0" /></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/mRH6Lrv/resim.png" alt="resim" border="0"></a>
 
 "input.csv" file has two columns, "circuit_parameters" columns represents Bi-SQUID circuit elements, and "values" columns represents mathematical value of these circuit elements. Figure shows below Bi-SQUID circuit representation:
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/tBkg38y/bisquid.png" alt="bisquid" border="0"></a>
 
+- psi1_initial_condition and psi2_initial condition are represent initial conditions of Bi-SQUID systems of differential equations. 
+- magnetic_field_range_initial and magnetic_fieldt_range_final define range of the external applied normalized magnetic field.
+- magnetic_field_resolution defines length of the external applied normalized magnetic field array
+- characteristic_current represents characteristic voltage, Vn = IcRn.
+- ib represents normalized bias current.
+- ic3 represents normalized current of shunt junction's critical current.
+- time_resoluition defines length of the time step array. Time step array represents time steps of Bi-SQUID systems of differential equations.
+- beta controls size of upper loop.
 - l1a, and l1b represents inductances at top of circuit.
 - l2a, and l2b represents inductances at parallel third Josephson Junction.
 - l3a, and l3b repesents inductances at bottom of circuit.
+- multiple_run defines 
+
+## Running a Single Run Simulation 
+PySQUID has a main class named PySQUID, firstliy users should import this class.
+
+PySQUID class has a method to run this simulation named calculate. Secondly users should run this method.
+
+When simulation time is done, calculate method returns voltage response of PySQUID agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
+
 
 ## Requirements
 
@@ -74,5 +91,3 @@ If you are using the SQUIDpy library and think you have found a bug, or if you h
 - Sasan at [sasan.razmkhah@gmail.com](sasan.razmkhah@gmail.com)
 
 # Developer Guides
-
-# References
