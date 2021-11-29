@@ -1,14 +1,14 @@
 # About 
 
-SQUIDpy is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. SQUIDpy library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, SQUIDpy provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the said parameter. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
+PySQIF is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. PySQIF library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, PySQIF provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the said parameter. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
 
-## How SQUIDpy works
+## How PySQIF works
 
-For an overview of the SQUIDpy methodology and the algorithmic methods which implement it, go to our technical paper[link](link).
+For an overview of the PySQIF methodology and the algorithmic methods which implement it, go to our technical paper[link](link).
 
 ## Authors
 
-SQUIDpy is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
+PySQIF is currently developed and maintained by [Ali AKGUN](https://linkedin.com/in/ali-akgün-592185147) and [Sasan RAZMKHAH](https://linkedin.com/in/razmkhahsasan), Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
 
 ## Contact
 
@@ -21,13 +21,13 @@ Your contribution is more than welcome! You can submit pull requests on our Gith
 
 ## Citing this project
 
-If you find SQUIDpy useful, please consider citing this project as:
+If you find PySQIF useful, please consider citing this project as:
 
 
 This will also help us secure future funding supporting the development of this software.
 
 
-If you do use SQUIDpy in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how SQUIDpy is being used as a research tool.
+If you do use PySQIF in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how PySQIF is being used as a research tool.
 
 ## Funding
 
@@ -41,9 +41,9 @@ In this installation guide, we used Anaconda environment, you can track all step
 ## Linux
 
 # Tutorials
-This section provides instructive tutorial to SQUIDpy newbies.
+This section provides instructive tutorial to PySQIF newbies.
 ## Input Text File Format
- SQUIDpy has an input csv file for input protocol with user, this file is named as input.csv in SQUIDpy folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
+ PySQIF has an input csv file for input protocol with user, this file is named as input.csv in PySQIF folder. Figure shows below input parameters of this simulation in input csv file, which can be edited by user.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/mRH6Lrv/resim.png" alt="resim" border="0"></a>
 
@@ -68,18 +68,18 @@ This section provides instructive tutorial to SQUIDpy newbies.
 - number_of_runs defines length of the ic3 gaussian distribution.
 
 ## Running a Single Run Simulation 
-PySQUID has a main class named PySQUID, firstliy users should import this class.
+PySQIF has a main class named PySQIF, firstliy users should import this class.
 
-PySQUID class has a method to run this simulation named calculate. Secondly users should run this method.
+PPySQIF class has a method to run this simulation named calculate. Secondly users should run this method.
 
-When simulation time is done, calculate method returns voltage response of PySQUID agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
+When simulation time is done, calculate method returns voltage response of PySQIF agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
 
 
 ## Running a Multiple Run Simulation 
 
 # Requirements
 
-SQUIDpy depends on several open-source libraries. The following packages are currently required:
+PySQIF depends on several open-source libraries. The following packages are currently required:
 
 - scipy
 - numpy
@@ -90,7 +90,7 @@ SQUIDpy depends on several open-source libraries. The following packages are cur
 
 # Report a bug
 
-If you are using the SQUIDpy library and think you have found a bug, or if you have questions about installing or using SQUIDpy, please don’t hesitate to contact with us:
+If you are using the PySQIF library and think you have found a bug, or if you have questions about installing or using PySQIF, please don’t hesitate to contact with us:
 
 - Ali at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com)
 - Sasan at [sasan.razmkhah@gmail.com](sasan.razmkhah@gmail.com)
