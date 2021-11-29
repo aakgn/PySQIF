@@ -5,9 +5,6 @@
 # @parameters:
 # @brief:
 # Calculates Bi-SQUID normalized inductances. 
-from PhiExt import *
-from Voltage import *
-from TimeStep import *
 
 THREE = 3
 TWO = 2

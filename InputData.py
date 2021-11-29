@@ -1,6 +1,7 @@
 # @ali.akgun
 # @date: 25.11.2021
 # @to do:   
+# Rakamları sayıları ifade et !!!
 # @bugs:    
 # @parameters:
 #    @input_file: input csv file.

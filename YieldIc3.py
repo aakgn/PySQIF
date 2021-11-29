@@ -11,6 +11,9 @@
 import numpy as np
 from Voltage import *
 
+FIRSTCOLUMN = 0
+INSERTFIRSTCOLUMN = 1
+
 class YieldIc3:
 
     # @ali.akgun
@@ -76,25 +79,32 @@ class YieldIc3:
     #   magnetic field array
     #   @standard_deviation = Represents standard deviation of ic3 distribution
     #   @number_of_runs = Represents length of ic3 distribution array.
-    #   simulation 
+    #   simulation
+    # @return: Voltage response arrray with respect to ic3 distribution. Array's
+    # first column includes ic3 distribution
     # @brief:
     # calculates voltage margin.
 
-    def calculate (self, psi_initial, t, PhiExtArray, ib, ic3_mean, beta, l12s,\
+    def calculate (self, psi_initial, t, phi_ext_array, ib, ic3_mean, beta, l12s,\
                    l12d, l23s, d, magnetic_field_resolution,\
                    standard_deviation, number_of_runs):
         
         ic3 = np.random.normal(ic3_mean, standard_deviation,\
                                             number_of_runs)
+        ic3.sort()
+        
         voltage_margin = np.empty((number_of_runs, magnetic_field_resolution))
         
         for i in range(number_of_runs):        
             
-            voltage = Voltage(psi_initial, t, PhiExtArray, ib, ic3[i], beta,\
+            voltage = Voltage(psi_initial, t, phi_ext_array, ib, ic3[i], beta,\
                                     l12s, l12d, l23s, d,\
                                     magnetic_field_resolution)
             voltage_margin[i, :] = voltage.calculate(psi_initial, t,\
-                                    PhiExtArray, ib, ic3[i], beta,\
+                                    phi_ext_array, ib, ic3[i], beta,\
                                     l12s, l12d, l23s, d,\
                                     magnetic_field_resolution)
-        return voltage_margin
+        
+        output = [phi_ext_array, ic3, voltage_margin]
+        
+        return output 

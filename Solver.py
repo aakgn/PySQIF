@@ -35,12 +35,12 @@ class Solver:
     # @brief:
     # constructor method
     
-    def __init__ (self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d,\
-                  l23s, d):
+    def __init__ (self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s,\
+                  l12d, l23s, d):
         
         self.psi_initial = psi_initial
         self.t = t
-        self.PhiExt = PhiExt
+        self.phi_ext_array = phi_ext_array
         self.ib = ib
         self.ic3 = ic3
         self.beta = beta
@@ -68,7 +68,8 @@ class Solver:
     # @brief:
     # Returns systems of differential equations as dpsi1dt and dpsi2dt.
     
-    def odes(self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
+    def odes (self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
+             l23s, d):
         
         
         # constants
@@ -79,12 +80,12 @@ class Solver:
 
         # define each ODE
         dpsi1dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) - (1 / (d * l12s * beta))\
-            * (psi1 - psi2 - 2 * np.pi * PhiExt * beta) + (1 / d) *\
+            * (psi1 - psi2 - 2 * np.pi * phi_ext_array * beta) + (1 / d) *\
             (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
             (1 + (1 / d)) * np.sin(psi1) - (1 / 2) * (1 - (1 / d)) * np.sin(psi2)
 
         dpsi2dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) + (1 / (d * l12s * beta))\
-            * (psi1 - psi2 - 2 * np.pi * PhiExt * beta) - (1 / d) *\
+            * (psi1 - psi2 - 2 * np.pi * phi_ext_array * beta) - (1 / d) *\
             (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
             (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
 
@@ -109,7 +110,8 @@ class Solver:
     # @brief:
     # Solves systems of differential equations for Bi-SQUID
     
-    def calculate (self, psi_initial, t, PhiExt, ib, ic3, beta, l12s, l12d, l23s, d):
+    def calculate (self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s,\
+                   l12d, l23s, d):
         
         return odeint(self.odes, psi_initial, t,\
-                      args = (PhiExt, ib, ic3, beta, l12s, l12d, l23s, d))
+                      args = (phi_ext_array, ib, ic3, beta, l12s, l12d, l23s, d))
