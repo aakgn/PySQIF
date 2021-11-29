@@ -68,11 +68,11 @@ This section provides instructive tutorial to PySQIF newbies.
 - number_of_runs defines length of the ic3 gaussian distribution.
 
 ## Running a Single Run Simulation 
-PySQUID has a main class named PySQUID, firstliy users should import this class.
+PySQIF has a main class named PySQIF, firstliy users should import this class.
 
-PySQUID class has a method to run this simulation named calculate. Secondly users should run this method.
+PPySQIF class has a method to run this simulation named calculate. Secondly users should run this method.
 
-When simulation time is done, calculate method returns voltage response of PySQUID agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
+When simulation time is done, calculate method returns voltage response of PySQIF agaisnt normalized external magnetic flux. Users can visualize output of the simulation by using Plot class.
 
 
 ## Running a Multiple Run Simulation 
