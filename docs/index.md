@@ -30,7 +30,8 @@ This will also help us secure future funding supporting the development of this 
 If you do use PySQIF in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how PySQIF is being used as a research tool.
 
 ## Funding
-[Contribution guidelines for this project](docs/index.md)
+
+
 # Installation
 In this installation guide, we used Anaconda environment, you can track all steps by using another enviroment if you want.
 
