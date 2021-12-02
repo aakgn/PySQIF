@@ -1,10 +1,10 @@
 # About 
 
-PySQIF is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. PySQIF library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, PySQIF provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the said parameter. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
+PySQIF is an open-source and user-friendly statistical analysis library for  SQUIDs/Bi-SQUIDs. Our library solves Bi-SQUID systems of differential equations. Our methodology is based on finding the voltage response of the Bi-SQUID for each time steps in the period. PySQIF library gives the average voltage response of symmetric Bi-SQUID for each corresponding normalized applied external magnetic flux as an output. The normalized applied external magnetic flux range can be determined by the user. Moreover, PySQIF provides multiple runs for the statistical analysis of Bi-SQUID. Users can determine margin and data range for one of the input parameters, and the tool generates gaussian distributed random numbers in a specific margin and data range for the ciritical current of shunted Josephson Junction. After that, the voltage response in an external applied magnetic field is achieved in the defined margin. These output sets, provide a wide range of design options to the user who can easily observe a reliable working range of Bi-SQUID circuits and can optimize Bi-SQUID design problems by using this output dataset.
 
 ## How PySQIF works
 
-For an overview of the PySQIF methodology and the algorithmic methods which implement it, go to our technical paper[link](link).
+For an overview of the PySQIF methodology and the algorithmic methods which implement it, go to our technical paper: [link](link).
 
 ## Authors
 
@@ -30,7 +30,7 @@ This will also help us secure future funding supporting the development of this 
 If you do use PySQIF in a publication, please take a few minutes and let us know via email at [ali.akgunphys@gmail.com](ali.akgunphys@gmail.com). We would love to hear how PySQIF is being used as a research tool.
 
 ## Funding
-
+[Contribution guidelines for this project](docs/index.md)
 # Installation
 In this installation guide, we used Anaconda environment, you can track all steps by using another enviroment if you want.
 
