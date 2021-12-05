@@ -24,3 +24,11 @@ normalized applied external magnetic flux as an output.
     about
     citing
     installation
+    Tutorials <tutorials/index>
+    List of functions <API/index>
+    contact
+    report_a_bug
+    Developer Guide <devs/index>
+
+.. about
+.. citing
