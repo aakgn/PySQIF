@@ -42,6 +42,7 @@ exclude_patterns = []
 
 
 # -- Options for HTML output -------------------------------------------------
+templates_path = ['_templates']
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
