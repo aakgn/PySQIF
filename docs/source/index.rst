@@ -15,3 +15,4 @@ PySQIF library gives the average voltage response of defined Bi-SQUID circuit fo
 normalized applied external magnetic flux as an output. 
 
 .. image:: ../images/logo.png
+:width: 100
