@@ -13,3 +13,5 @@ PySQIF stands for Python Super Conductor Quantum Interference Filters.
 PySQIF is an open-source statistical analysis library for SQUIDs/Bi-SQUIDs.
 PySQIF library gives the average voltage response of defined Bi-SQUID circuit for each corresponding
 normalized applied external magnetic flux as an output. 
+
+.. image:: ../images/logo.png
