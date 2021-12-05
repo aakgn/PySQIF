@@ -17,3 +17,10 @@ normalized applied external magnetic flux as an output.
 .. image:: ../images/logo.png
    :width: 100
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Contents:
+
+    about
+    citing
+    installation
