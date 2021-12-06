@@ -11,13 +11,13 @@ of the alternative solutions. Instead of the conventional DC SQUID, Bi-SQUID is 
 Josephson junction to typical DC SQUID. Bi-SQUID ‘s voltage response against external applied magnetic field
 is more linear than DC SQUID. [2], [3]
 
- External applied magnetic field response of Bi-SQUID characterized by set of differential equations,
+External applied magnetic field response of Bi-SQUID characterized by set of differential equations,
 there is no easy analytic way to solve these equations. [2], [4]Therefore, numerical analysis plays
 critical role for this type of systems. Modelling and simulation tools can support design studies by using numerical methods.
 However, there is no viable modelling and simulation application exist for Bi-SQUIDs. Thus, we developed an open-source and
 user-friendly statistical analysis tool for Bi-SQUIDs. 
 
- Our library gives the average voltage response of Bi-SQUID/SQUID for each corresponding normalized 
+Our library gives the average voltage response of Bi-SQUID/SQUID for each corresponding normalized 
 applied external magnetic flux as an output. The normalized applied external magnetic flux range
 can be determined by the user. Moreover, our simulation tool provides multiple runs for the statistical analysis of Bi-SQUID.
 Users can determine margin and data range for critical currents of shunted junction, and the tool generates gaussian
