@@ -32,7 +32,7 @@ For an overview of the PySQIF methodology and the algorithmic methods which impl
 
 Authors
 ==============
-PySQIF is currently developed and maintained by Ali AKGUN https://linkedin.com/in/ali-akgün-592185147 and Sasan RAZMKHAH https://linkedin.com/in/razmkhahsasan, Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
+PySQIF is currently developed and maintained by Ali AKGUN https://www.linkedin.com/in/akgunali01/ and Sasan RAZMKHAH https://linkedin.com/in/razmkhahsasan, Electrical and Electronics Engineering Department, TOBB University of Economics and Technology, Ankara, Turkey. 
 
 Contact
 ==============
@@ -42,7 +42,7 @@ Don’t hesitate to contact:
 
 Contributing
 ==============
-Your contribution is more than welcome! You can submit pull requests on our Github, or contact https://linkedin.com/in/ali-akgün-592185147 if you want to bring big contributions to the project.
+Your contribution is more than welcome! You can submit pull requests on our Github, or contact https://www.linkedin.com/in/akgunali01/ if you want to bring big contributions to the project.
 
 
 
