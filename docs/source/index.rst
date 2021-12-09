@@ -24,7 +24,7 @@ normalized applied external magnetic flux as an output.
     about
     citing
     installation
-    Tutorials <tutorials/index>
+    tutorials
     List of functions <API/index>
     contact
     report_a_bug
