@@ -11,7 +11,7 @@ ali.akgunphys@gmail.com
 .. toctree::
     :maxdepth: 2
   
-    single_run
+    single_run_tutorial
     
     
     
