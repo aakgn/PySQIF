@@ -9,7 +9,14 @@
 # normal distribution according to mean and standard deviation inputs.
 
 import numpy as np
-from Voltage import *
+
+try:
+    # When running from pip installation
+    from .Voltage import *
+except ImportError:
+    # When running from source without pip installation
+    from Voltage import *
+
 
 FIRSTCOLUMN = 0
 INSERTFIRSTCOLUMN = 1

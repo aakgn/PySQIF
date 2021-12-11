@@ -13,8 +13,14 @@
 
 import numpy as np
 from scipy.integrate import odeint
-from Solver import *
 from statistics import mean
+
+try:
+    # When running from pip installation
+    from .Solver import *
+except ImportError:
+    # When running from source without pip installation
+    from Solver import *
 
 class Voltage:
     
