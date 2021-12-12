@@ -17,7 +17,7 @@ Figure shows below Bi-SQUID circuit representation:
 
 
 .. image:: ../images/bi-squid.PNG
-   :width: 500
+   :width: 200
    
  
 * psi1_initial_condition and psi2_initial condition are represent initial conditions of Bi-SQUID systems of differential equations. If you don't familiar with differential equations content, you can set these values as 0.
