@@ -7,15 +7,16 @@ this file is named as input.csv.
 Figure shows below input parameters of this simulation in input csv file,
 which can be edited by the user.
 
-.. image:: ../images/pysqif_input_format.png
+.. image:: ../images/pysqif_input_format.PNG
    :width: 500
    
+
 "input.csv" file has two columns, "circuit_parameters" columns represents Bi-SQUID circuit elements,
 and "values" columns represents mathematical value of these circuit elements.
 Figure shows below Bi-SQUID circuit representation:
 
 
-.. image:: ../images/bi-squid.png
+.. image:: ../images/bi-squid.PNG
    :width: 500
    
  
