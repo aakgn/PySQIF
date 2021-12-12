@@ -10,7 +10,8 @@ ali.akgunphys@gmail.com
 
 .. toctree::
     :maxdepth: 2
-  
+    
+    input_text_file_format
     single_run_tutorial
     
     
