@@ -8,7 +8,7 @@ Figure shows below input parameters of this simulation in input csv file,
 which can be edited by the user.
 
 .. image:: ../images/pysqif_input_format.PNG
-   :width: 500
+   :width: 200
    
 
 "input.csv" file has two columns, "circuit_parameters" columns represents Bi-SQUID circuit elements,
