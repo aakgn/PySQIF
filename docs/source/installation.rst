@@ -9,7 +9,7 @@ Installation
 Installing via pip
 ==================
 
-The recommended way to install qucat is via pip by opening a terminal and running
+The recommended way to install PySQIF is via pip by opening a terminal and running
 
 ``pip install PySQIF``
 
@@ -21,7 +21,7 @@ The latest source code is available on our Github repository
 `<https://github.com/aakgn/PySQIF>`_
 
 To install from source, download or clone the source code, 
-open a terminal and navigate to the qucat folder, and run 
+open a terminal and navigate to the PySQIF folder, and run 
 ``pip install .``
 
 
