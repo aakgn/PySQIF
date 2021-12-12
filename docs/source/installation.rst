@@ -13,16 +13,16 @@ The recommended way to install PySQIF is via pip by opening a terminal and runni
 
 ``pip install PySQIF``
 
+* Installation tutorial video for windows: https://youtu.be/wVKTPtfU2gQ
+
+* Installation tutorial video for Linux/MacOs: https://youtu.be/QsTPWjJw6CY
+
 Installing from source
 ======================
 
 The latest source code is available on our Github repository
 
 `<https://github.com/aakgn/PySQIF>`_
-
-To install from source, download or clone the source code, 
-open a terminal and navigate to the PySQIF folder, and run 
-``pip install .``
 
 
 Requirements
@@ -32,6 +32,5 @@ The following packages are currently required:
 
 * Scipy
 * Numpy
-* Solver
 * Matplotlib
 * Pandas
