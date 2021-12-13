@@ -35,3 +35,8 @@ Figure shows below Bi-SQUID circuit representation:
 * standard_devaiation determines standard deviation of ic3 distribution in multiple run case.
 * mean represents mean of the ic3 gaussian distribution in multiple run case.
 * number_of_runs defines length of the ic3 gaussian distribution.
+
+
+""
+sadasda
+""
