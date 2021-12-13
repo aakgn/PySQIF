@@ -11,8 +11,8 @@ represents circuit and simulation parameters. Download link for this input csv f
 https://github.com/aakgn/PySQIF/blob/main/docs/tutorial_resources/bi-squid_single_run.csv
 
 
-``
-simulation_parameters,values
+
+``simulation_parameters,values
 psi1_initial_condition,0
 psi2_initial_condition,0
 magnetic_field_range_initial,0
@@ -32,8 +32,8 @@ l3b,0.3
 multiple_run,0
 standard_deviation,0.5
 mean,3
-number_of_runs,1000
-``
+number_of_runs,1000``
+
 
 Running Simulation
 ==================
