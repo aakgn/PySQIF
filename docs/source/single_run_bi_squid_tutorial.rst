@@ -49,4 +49,4 @@ by using the plot method.
 Figure shows output visualization below:
 
 .. image:: ../images/bi-squid-output.png
-   :width: 200
+   :width: 400
