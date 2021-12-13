@@ -12,7 +12,7 @@ ali.akgunphys@gmail.com
     :maxdepth: 2
     
     input_text_file_format
-    single_run_bi-squid_tutorial
+    single_run_bi_squid_tutorial
     
     
     
