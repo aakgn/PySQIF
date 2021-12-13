@@ -17,6 +17,7 @@ Running Simulation
 Secondly, we should import and initialzie our PySQIF library.
 
 ``from PySQIF.Main import Main as pysqif``
+
 ``voltage_response = pysqif("bi-squid_single_run.csv")``
 
 We imported and constructed our library. Finally, we can calculate
