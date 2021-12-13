@@ -3,7 +3,7 @@ Bi-SQUID Single Run Simulation
 *******************************
 
 Input Text File Preparation
-###############################
+==================
 
 Firstly, we should prepare input text file for our simulation goals.
 Input csv file content is shown in below for this tutorial. Input csv file
@@ -35,7 +35,7 @@ number_of_runs,1000
 ""
 
 Running Simulation
-###############################
+==================
 
 Secondly, we should import and initialzie our PySQIF library.
 
@@ -86,7 +86,7 @@ is shown in below:
 
 
 Visualization
-###############################
+==================
 
 Finally, we can visualize our results by using PySQIF Plot module. As we did before
 firstly, we should import and construct our Plot module ,and then we can plot our results
