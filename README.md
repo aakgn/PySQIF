@@ -36,4 +36,4 @@ repository and sending pull requests.
 Filing bug reports, proposing changes or additional features can be done on our
 [issues page](https://github.com/aakgn/PySQIF/issues)
 
-You can also contact Mario at ali.akgunphys@gmail.com.
+You can also contact Ali  at ali.akgunphys@gmail.com.
