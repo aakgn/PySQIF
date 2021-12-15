@@ -11,7 +11,7 @@ represents circuit and simulation parameters. Download link for this input csv f
 https://github.com/aakgn/PySQIF/blob/main/docs/tutorial_resources/bi-squid_single_run.csv
 
 .. image:: ../images/BiSQUID_single_run_input.PNG
-   :width: 400
+   :width: 200
 
 Running Simulation
 ==================
