@@ -10,11 +10,14 @@ Input csv file content is shown in below for this tutorial. Input csv file
 represents circuit and simulation parameters. Download link for this input csv file:
 https://github.com/aakgn/PySQIF/blob/main/docs/tutorial_resources/bi-squid_single_run.csv
 
+.. image:: ../images/BiSQUID_single_run_input.PNG
+   :width: 400
 
 Running Simulation
 ==================
 
-Secondly, we should import and initialzie our PySQIF library.
+Secondly, we should import and initialize our PySQIF library as shown in below. Prepared input csv file
+should be placed at Python working directory.
 
 ``from PySQIF.Main import Main as pysqif``
 
@@ -27,7 +30,8 @@ voltage response of our circuit by using calculate method.
 
 When simulation time is done, two output file appears in the current working folder.
 First of them is output_voltage.csv, this csv fiel consists voltage response of 
-our circuit in defined normalized extetrnal magnetic flux range. 
+our circuit in defined normalized extetrnal magnetic flux range.
+
 
 Second output file is output_normalized_magnetic_flux.csv, this file consists
 normalized external magnetic flux array in defined range. 
@@ -50,3 +54,6 @@ Figure shows output visualization below:
 
 .. image:: ../images/bi-squid-output.png
    :width: 400
+   
+Figure shows Bi-SQUID external applied magnetic field response. Voltage response is represented as 
+normalized average voltage response.
