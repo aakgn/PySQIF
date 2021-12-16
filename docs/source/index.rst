@@ -6,7 +6,7 @@
 PySQIF
 ==================
 
-.. note:: We hope you enjoy using PySQIF. Please help us make PySQIF better by :ref:`citing` in your publications
+.. note:: We hope you enjoy using PySQIF. Please help us make PySQIF better by :ref:`citing_this_project` in your publications
 
 
 PySQIF stands for Python Super Conductor Quantum Interference Filters. 
@@ -22,7 +22,7 @@ normalized applied external magnetic flux as an output.
     :caption: Contents:
 
     about
-    citing
+    citing_this_project
     installation
     tutorials
     List of functions <API/index>
