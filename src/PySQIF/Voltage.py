@@ -64,6 +64,7 @@ class Voltage:
     # @ali.akgun
     # @date: 24.11.2021
     # @to do:  
+    # Write brief !!!
     # @bugs:
     # @parameters:
     #   @psi_cinitial = initial conditions for solving systems of d.e. 
@@ -80,8 +81,6 @@ class Voltage:
     #   @magnetic_field_resolution = Represents length of external applied
     #   magnetic field array
     # @brief:
-    # Returns normalized voltage mean(voltage) = (1/2) * mean(thetadot)
-    # thetadot = psi1dot + psi2dot
 
     
     def calculate(self, psi_initial, t, phi_ext_array, ib, ic3, beta, l12s, l12d,\
