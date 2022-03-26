@@ -107,7 +107,7 @@ class Voltage:
                 * (psi1 - psi2 - 2 * np.pi * phi_ext * beta) - (1 / d) *\
                 (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
                 (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
-    
+            
             meanvoltage.append(integrate.simps(dpsi1dt + dpsi2dt, t) /\
               (2 *  t[len(t) - 1]))
         
