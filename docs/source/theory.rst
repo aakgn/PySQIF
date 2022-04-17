@@ -5,6 +5,7 @@ Theory
 Quantum Mechanical Current Density
 ==================
 Let's we define wave function of a particle as below:
+:math:'a^2 + b^2 = c^2'.
 
 We can write Schrodinger equation of the particle as below:
 
