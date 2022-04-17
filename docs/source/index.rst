@@ -29,6 +29,7 @@ normalized applied external magnetic flux as an output.
     contact
     report_a_bug
     Developer Guide <devs/index>
+    theory
 
 .. about
 .. citing
