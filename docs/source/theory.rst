@@ -6,13 +6,7 @@ Quantum Mechanical Current Density
 ==================
 Let's we define wave function of a particle as below:
 
-.. math::
-
-   (a + b)^2 = a^2 + 2ab + b^2
-
-   (a - b)^2 = a^2 - 2ab + b^2
-   
-   :math:'\sigma_{1}'
+.. math:: (a + b)^2 = a^2 + 2ab + b^2
 
 We can write Schrodinger equation of the particle as below:
 
