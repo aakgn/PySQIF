@@ -7,3 +7,4 @@ Let's we define wave function of a particle as below:
 We can write Schrodinger equation of the particle as below:
 
 .. math:: i\hbar\frac{\partial\Psi}{\partial t} = -\frac{\hbar^2}{2m}\triangledown^2\Psi + \hat{V}\Psi
+
