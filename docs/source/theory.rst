@@ -1,37 +1,12 @@
 *************
 Theory
 *************
+Below, you will find theoretical sections to help you understand Superconducting Quantum Interference Devices.
 
-Quantum Mechanical Current Density
-==================
-Let's we define wave function of a particle as below:
+If you have additional questions, please ask a question on:  
+ali.akgunphys@gmail.com
 
-.. math:: (a + b)^2 = a^2 + 2ab + b^2
-.. math:: \Psi = Ae^(j\varphi(t))
-
-We can write Schrodinger equation of the particle as below:
-
-``pip install PySQIF``
-
-* Installation tutorial video for windows: https://youtu.be/wVKTPtfU2gQ
-
-* Installation tutorial video for Linux/MacOs: https://youtu.be/QsTPWjJw6CY
-
-Installing from source
-======================
-
-The latest source code is available on our Github repository
-
-`<https://github.com/aakgn/PySQIF>`_
-
-
-Requirements
-============
-PySQIF depends on several open-source libraries. 
-The following packages are currently required:
-
-* Scipy
-* Numpy
-* Matplotlib
-* Pandas
-
+.. toctree::
+    :maxdepth: 2
+    
+    quantum_mechanical_current_density
