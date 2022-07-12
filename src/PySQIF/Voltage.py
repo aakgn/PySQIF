@@ -12,7 +12,7 @@
 # magnetic field.
 
 import numpy as np
-from scipy.integrate import odeint
+from scipy.integrate import simps
 from statistics import mean
 
 try:
@@ -107,7 +107,7 @@ class Voltage:
                 (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
                 (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
             
-            meanvoltage.append(integrate.simps(dpsi1dt + dpsi2dt, t) /\
+            meanvoltage.append(simps(dpsi1dt + dpsi2dt, t) /\
               (2 *  t[len(t) - 1]))
         
         return meanvoltage 
