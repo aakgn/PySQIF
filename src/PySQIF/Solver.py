@@ -79,12 +79,12 @@ class Solver:
         psi2 = psi_initial[1]
 
         # define each ODE
-        dpsi1dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) - (1 / (d * l12s * beta))\
+        dpsi1dt = (1 + ((l12d) / (d * l12s))) * (ib / 2) - (1 / (d * l12s * beta))\
             * (psi1 - psi2 - 2 * np.pi * phi_ext_array * beta) + (1 / d) *\
             (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
             (1 + (1 / d)) * np.sin(psi1) - (1 / 2) * (1 - (1 / d)) * np.sin(psi2)
 
-        dpsi2dt = (1 + ((l12d * d) / (d * l12s))) * (ib / 2) + (1 / (d * l12s * beta))\
+        dpsi2dt = (1 + ((l12d) / (d * l12s))) * (ib / 2) + (1 / (d * l12s * beta))\
             * (psi1 - psi2 - 2 * np.pi * phi_ext_array * beta) - (1 / d) *\
             (1 + (l23s / (d * l12s))) * ic3 * np.sin(psi2 - psi1) - (1 / 2) * \
             (1 - (1 / d)) * np.sin(psi1) - (1 / 2) * (1 + (1 / d)) * np.sin(psi2)
