@@ -6,7 +6,7 @@ Citing this project
 
 If you find PySQIF useful, please consider citing this project as:
 
-https://www.isupercon.jp/iss2021/program-site/program2021/abstract/ed/ed2-2.html
+https://iopscience.iop.org/article/10.1088/1742-6596/2323/1/012026#references
 
 This will also help us secure future funding supporting the development of this library.
 
