@@ -46,7 +46,6 @@ Your contribution is more than welcome! You can submit pull requests on our Gith
 
 Funding
 =============
-This work is supported by the Turkish Aerospace Industry.
 
 References
 ==============
