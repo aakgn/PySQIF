@@ -11,6 +11,7 @@ If you have questions concerning the usage or installation of PySQIF, please ask
 
 Installation
 ------------
+[![Downloads](https://pepy.tech/badge/pysqif)](https://pepy.tech/project/pysqif)
 
 [![Downloads](https://pypi.org/project/PySQIF/)](https://pypi.org/project/PySQIF/)
 
