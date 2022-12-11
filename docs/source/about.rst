@@ -28,7 +28,7 @@ to the user who can easily observe a reliable working range of Bi-SQUID circuits
 
 How PySQIF works
 ==================
-For an overview of the PySQIF methodology and the algorithmic methods which implement it, go to our technical paper https://www.isupercon.jp/iss2021/program-site/program2021/abstract/ed/ed2-2.html.
+For an overview of the PySQIF methodology and the algorithmic methods which implement it, go to our technical paper https://iopscience.iop.org/article/10.1088/1742-6596/2323/1/012026.
 
 Authors
 ==============
